@@ -1,0 +1,19 @@
+
+.contain-contact{
+    height: 100vh;
+}
+.text-contact{
+color: rgb(255, 255, 255);
+font-family: "BBaran",sans-serif;
+text-align: end;
+margin: 3rem 0;
+font-size: 1.2rem;
+
+}
+.mytable{
+    margin-top: 8rem;
+    direction: rtl;
+font-family: "BBaran",sans-serif;
+text-align: start;
+font-size: 1.1rem;
+}
