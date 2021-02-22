@@ -3,7 +3,6 @@ import "./App.css"
 import Main from "./Main"
 import Footer from "./Footer"
 import { WiDaySunny, WiLightning } from "react-icons/wi";
-import Menu from './Menu';
 export default class App extends Component {
 
     render() {

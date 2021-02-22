@@ -1,0 +1,15 @@
+.my-font{
+    font-family: "BBaran",sans-serif;
+}
+@font-face{
+    src: url(../src/font/BBaran.woff) format(woff);
+    src: url(../src/font/BBaran.ttf) format(ttf);
+    src: url(../src/font/BBaran.eot) format(eot);
+    font-family: 'BBaran';
+    font-style: normal;
+    font-weight: normal;
+}
+.images{
+   
+    
+}

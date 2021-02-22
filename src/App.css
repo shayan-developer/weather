@@ -51,14 +51,15 @@ color: yellow;
             }
             50%{
                 transform: translateY(10%) ;
+                color: rgb(255, 255, 255);
             }
             75%{
                 transform: translateX(10%) ;
-                color: rgb(47, 43, 255);
+                color: rgb(103, 105, 90);
         
             }
             100%{
                 transform: translateY(10%) ;
-                
+                color: rgb(255, 255, 255);
             }
 }

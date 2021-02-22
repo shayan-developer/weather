@@ -1,6 +1,5 @@
 .mycontent{
     background-image: linear-gradient(rgb(102, 224, 255),rgb(49, 157, 230));
-
 }
 .menu-item{
     flex-direction: column;
