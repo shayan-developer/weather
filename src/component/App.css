@@ -1,0 +1,65 @@
+
+.header{
+height: 100vh;
+}
+.text-head{
+    color: white;
+    font-family: "BBaran",sans-serif;
+}
+.icon-head{
+    font-size: 7rem;
+    animation-name: icon;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes icon{
+    0%{
+transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+color: yellow;
+    }
+    50%{
+        transform: rotate(180deg);
+
+    }
+    75%{
+        transform: rotate(270deg);
+        color: yellow;
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+.icon-second{
+    font-size: 7rem;
+    animation-name: icon-second;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes icon-second{
+    0%{
+        color: rgb(255, 255, 255);
+        transform: translateY(10%) ;
+            }
+            25%{
+                transform: translateX(10%) ;
+                color: rgb(103, 105, 90);
+            }
+            50%{
+                transform: translateY(10%) ;
+                color: rgb(255, 255, 255);
+            }
+            75%{
+                transform: translateX(10%) ;
+                color: rgb(103, 105, 90);
+        
+            }
+            100%{
+                transform: translateY(10%) ;
+                color: rgb(255, 255, 255);
+            }
+}

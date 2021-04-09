@@ -1,0 +1,51 @@
+.mycontent{
+    background-image: linear-gradient(rgb(102, 224, 255),rgb(49, 157, 230));
+}
+.menu-item{
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(102, 102, 102);
+    font-family: "BBaran";
+    position: fixed;
+    width: 0;
+    top:0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+    overflow-x: hidden;
+    align-items: flex-end;
+    transition: all .5s ;
+    font-size: 1.2rem;
+}
+.menu-link{
+    margin: 2rem 1rem;
+    color: white;
+    
+}
+.menu-link:hover{
+    color: rgb(168, 218, 224);
+    text-decoration: none;
+}
+.myicon{
+    text-align: end;
+    background-color: rgb(66, 189, 226);
+    padding: .5rem;
+    font-family: "BBaran";
+    
+}
+.icon-menu{
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.close-icon{
+    font-size: 2rem ;
+    margin: 1rem 1rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition:all .5s;
+}
+.close-icon:hover{
+    transform: rotate(90deg);
+    color: rgb(168, 218, 224);
+}

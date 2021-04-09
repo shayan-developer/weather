@@ -1,0 +1,47 @@
+.main-contain{
+    height: 90vh;
+}
+.icon-show{
+    font-size:7rem;
+    color:rgb(255, 255, 255) !important;
+    display: flex;
+}
+.text{
+    font-size: 1.1rem;
+    color: white;
+    font-family: "BBaran",sans-serif;
+}
+
+.detail{
+    border:1px solid rgb(13, 191, 204);
+    border-radius: 0.5rem;
+    background-color: rgb(141, 208, 247);
+
+}
+@font-face{
+    src: url(../font/BBaran.woff) format(woff);
+    font-family: 'BBaran';
+    font-style: normal;
+    font-weight: normal;
+}
+.result{
+    height: 60vh;
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right:3px solid white;
+}
+.icon-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 500px){
+    .text{
+        font-size: 1.5rem;
+    
+    }
+}
