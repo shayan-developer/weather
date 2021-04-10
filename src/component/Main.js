@@ -3,7 +3,7 @@ import "./main.css"
 import axios from "axios";
 import {
     WiCloudy, WiDaySunny, WiMoonWaxingCrescent3
-    , WiNightAltCloudy
+    , WiNightAltCloudy,WiDust
 } from "react-icons/wi";
 import Select from './Select';
 import data from "./initialValue";
@@ -17,11 +17,15 @@ export default function Main() {
             .then(res => {
                 let data_temp = Math.round(res.data.main.temp);
                 let wind_data = Math.round(res.data.wind.speed * 3.6);
+                console.log(res.data);
                 let icon_weather_data = res.data.weather[0].main;
                 let weather_description = res.data.weather[0].description;
                 let icon_weather;
                 let time = new Date();
                 let hour = time.getHours()
+                if(icon_weather_data=="Dust"){
+                    icon_weather=<WiDust/>
+                }
                 if (hour > 19) {
                     if (icon_weather_data == "Clouds") {
                         icon_weather = <WiNightAltCloudy />

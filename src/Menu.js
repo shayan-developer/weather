@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Route, Link, BrowserRouter } from "react-router-dom";
+import { Route, Link, BrowserRouter,Switch } from "react-router-dom";
 import Contact from './component/Contact';
 import "./Menu.css"
 import { HiMenu } from "react-icons/hi";
 import App from './component/App';
 import Footer from "./component/Footer"
+import NotFound from './component/NotFound';
 export default class Menu extends Component {
     Openmenu = () => {
         document.getElementById("menu").style.width = "30%";
@@ -27,8 +28,11 @@ export default class Menu extends Component {
                         <div className="col"><span className="icon-menu" onClick={this.Openmenu}>منو <HiMenu /> </span></div>
 
                     </div>
+                    <Switch>
                     <Route path="/contact" component={Contact} />
                     <Route exact path="/" component={App} />
+                    <Route component={NotFound}/>
+                    </Switch>
                     <Footer />
                 </BrowserRouter>
             </div>

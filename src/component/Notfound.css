@@ -1,0 +1,14 @@
+.notfound{
+min-height: 100vh;
+}
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+.icon{
+    font-size: 4rem !important;
+}
