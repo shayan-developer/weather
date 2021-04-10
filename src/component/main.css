@@ -39,9 +39,26 @@
     align-items: center;
     justify-content: center;
 }
+.speech{
+    display: flex;
+    flex-direction: column;
+    font-family:'BBaran',sans-serif;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.speech-btn{
+    background-color:  rgb(49, 157, 230) !important;
+}
 @media only screen and (min-width: 500px){
     .text{
         font-size: 1.5rem;
     
+    }
+    
+}
+@media only screen and (max-width:500px) {
+    .speech{
+        font-size:.7rem ;
     }
 }

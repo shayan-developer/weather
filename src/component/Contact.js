@@ -7,7 +7,7 @@ export default class Contact extends Component {
                 <div className="row contain-contact  ">
                     <div className="col ">
                         <h2 className="text-contact"> تماس با من</h2>
-                        <table class="table  mytable">
+                        <table className="table  mytable">
                             <thead>
                                 <tr>
                                     <th scope="col">نام</th>
