@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./App.css"
+import "./Styles/App.css"
 import Main from "./Main"
 import { WiDaySunny, WiLightning } from "react-icons/wi";
 export default class App extends Component {

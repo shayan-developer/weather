@@ -1,0 +1,40 @@
+.Email{
+    margin-top: 4rem;
+}
+.addEmail{
+    margin-bottom: .5rem;
+    direction: rtl;
+}
+.content{
+    margin-bottom: .5rem;
+    direction: rtl;
+    resize: none;
+}
+.addEmail::placeholder{
+    font-family:"BBaran",sans-serif;
+}
+.content::placeholder{
+    font-family:"BBaran",sans-serif;
+}
+.send{
+    background-color:  rgb(49, 157, 230);
+    color: #ffffff;
+    font-family:"BBaran",sans-serif;
+}
+.send:hover{
+    background-color:rgb(43, 139, 202) ;
+    color: #ffffff;
+}
+.textEmail{
+    color: #ffffff;
+    font-family:"BBaran",sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    }
+    
+    
+@media screen and (max-width: 480px) {
+    .textEmail{
+        font-size: 1rem;
+    }
+}

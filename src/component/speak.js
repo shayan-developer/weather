@@ -3,7 +3,7 @@ const speak = (temp,city) => {
     speech.lang = "en-US";
     speech.volume = 1;
     speech.rate = .5;
-    speech.text = `Today's temperature in ${city} is ${temp} degrees Celsius`
+    speech.text = `Today's ${temp} degrees in ${city}`
     window.speechSynthesis.speak(speech)
 
 }

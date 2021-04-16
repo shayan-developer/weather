@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react'
-import "./main.css"
+import React, { useState} from 'react'
+import "./Styles/main.css"
 import axios from "axios";
 import {
     WiCloudy, WiDaySunny, WiMoonWaxingCrescent3
@@ -11,35 +11,40 @@ import speak from "./speak"
 export default function Main() {
 
     const [weather, setweather] = useState(data)
-    const handler = useCallback((event) => {
+    const handler = (event) => {
         const url = `http://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&lang=fa&units=metric&appid=7e01bffff9e6f597752ff8f1bfccb6ab`
         axios.get(url)
             .then(res => {
                 let data_temp = Math.round(res.data.main.temp);
                 let wind_data = Math.round(res.data.wind.speed * 3.6);
-                console.log(res.data);
                 let icon_weather_data = res.data.weather[0].main;
                 let weather_description = res.data.weather[0].description;
                 let icon_weather;
                 let time = new Date();
                 let hour = time.getHours()
-                if(icon_weather_data=="Dust"){
+                if(icon_weather_data==="Dust"){
                     icon_weather=<WiDust/>
                 }
-                if (hour > 19) {
-                    if (icon_weather_data == "Clouds") {
+                if (hour >= 19) {
+                    if (icon_weather_data === "Clouds") {
                         icon_weather = <WiNightAltCloudy />
                     }
-                    if (icon_weather_data == "Clear") {
+                    if (icon_weather_data === "Clear") {
                         icon_weather = <WiMoonWaxingCrescent3 />
+                    }
+                    if(icon_weather_data==="Dust"){
+                        icon_weather=<WiDust/>
                     }
                 }
                 if (hour < 19) {
-                    if (icon_weather_data == "Clouds") {
+                    if (icon_weather_data === "Clouds") {
                         icon_weather = <WiCloudy />
                     }
-                    if (icon_weather_data == "Clear") {
+                    if (icon_weather_data === "Clear") {
                         icon_weather = <WiDaySunny />
+                    }
+                    if(icon_weather_data==="Dust"){
+                        icon_weather=<WiDust/>
                     }
                 }
                 setweather({
@@ -52,7 +57,7 @@ export default function Main() {
                 })
 
             })
-    }, [weather])
+    }
     return (
         <div>
             <div className="main-contain row my-5">

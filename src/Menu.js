@@ -8,7 +8,7 @@ import Footer from "./component/Footer"
 import NotFound from './component/NotFound';
 export default class Menu extends Component {
     Openmenu = () => {
-        document.getElementById("menu").style.width = "30%";
+        document.getElementById("menu").style.width = "20%";
 
     }
     CloseMenu = () => {
@@ -16,12 +16,13 @@ export default class Menu extends Component {
     }
     render() {
         return (
+            <BrowserRouter>
             <div className="container-fluid mycontent">
-                <BrowserRouter>
+                
                     <nav className="menu-item " id="menu">
                         <span className="close-icon" onClick={this.CloseMenu}>&times;</span>
                         <Link to="/" className="menu-link">خانه</Link>
-                        <Link to="/contact" className="menu-link"> ارتباط با من </Link>
+                        <Link to="/contact" className="menu-link">تماس با من</Link>
                     </nav>
 
                     <div className="myicon row">
@@ -34,8 +35,9 @@ export default class Menu extends Component {
                     <Route component={NotFound}/>
                     </Switch>
                     <Footer />
-                </BrowserRouter>
+               
             </div>
+            </BrowserRouter>
 
         )
     }

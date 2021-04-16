@@ -4,7 +4,7 @@
 .menu-item{
     flex-direction: column;
     display: flex;
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(0, 147, 206);
     font-family: "BBaran";
     position: fixed;
     width: 0;
@@ -14,11 +14,11 @@
     z-index: 1;
     overflow-x: hidden;
     align-items: flex-end;
-    transition: all .5s ;
+    transition: all .4s ;
     font-size: 1.2rem;
 }
 .menu-link{
-    margin: 2rem 1rem;
+    margin: 2rem 0.5rem;
     color: white;
     
 }
@@ -48,4 +48,10 @@
 .close-icon:hover{
     transform: rotate(90deg);
     color: rgb(168, 218, 224);
+}
+
+@media screen and (max-width: 480px) {
+    .menu-link{
+        font-size: .8rem;
+    }
 }

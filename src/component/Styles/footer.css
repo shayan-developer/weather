@@ -6,22 +6,23 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 .telegram{
     font-size: 2.5rem;
     color: rgb(47, 181, 221);
 }
-.youtube{
+.Whatsapp{
     font-size: 2.5rem;
-    color: rgb(255, 19, 19);
+    color: rgb(33, 216, 9);
 }
 .instagram{
     font-size: 2.5rem;
     color: rgb(206, 6, 116);
 }
-.facebook{
+.github{
     font-size: 2.5rem;
-    color: rgb(19, 55, 253);
+    color: rgb(140, 19, 253);
 }
 .text-footer{
     color: white;
