@@ -14,23 +14,26 @@ export default class EmailToMe extends Component {
         let name = event.target.name
         this.setState({ [name]: value })
     }
-    sendMail=()=>{
-        let emailAd=this.state.emailUser;
-        let msg=this.state.message
-        send(emailAd,msg)
+    sendMail = (e) => {
+        e.preventDefault()
+        let emailAd = this.state.emailUser;
+        let msg = this.state.message
+        msg&&emailAd?send(emailAd, msg):alert("خطا در ارسال پیام")
     }
     render() {
         return (
             <div className="row justify-content-center">
                 <div className="col-sm-8">
-                    <div className="form-group Email">
-                        <p className="textEmail">همچنین میتوانید نظرات و انتقادات خود را ارسال کنید </p>
-                        <input className="form-control addEmail" onChange={this.emailUsers}
-                            placeholder="لطفا ایمیل خود را اینجا وارد کنید..." name="emailUser" />
-                        <textarea className="content form-control" name="message" onChange={this.emailUsers}
-                            placeholder="لطفا نظر خود را اینجا وارد کنید ..." rows="4" />
-                        <button className=" btn send form-control" onClick={this.sendMail}>ارسال</button>
-                    </div>
+                    <form onSubmit={this.sendMail}>
+                        <div className="form-group Email">
+                            <p className="textEmail">همچنین میتوانید نظرات و انتقادات خود را ارسال کنید </p>
+                            <input className="form-control addEmail" onChange={this.emailUsers} type="email"
+                                placeholder="لطفا ایمیل خود را اینجا وارد کنید..." name="emailUser" required/>
+                            <textarea className="content form-control" name="message" onChange={this.emailUsers}
+                                placeholder="لطفا نظر خود را اینجا وارد کنید ..." rows="4" required/>
+                            <button className=" btn send form-control" type="submit">ارسال</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         )

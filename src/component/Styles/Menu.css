@@ -5,7 +5,7 @@
     flex-direction: column;
     display: flex;
     background-color: rgb(0, 147, 206);
-    font-family: "BBaran";
+    font-family: "BBaran",sans-serif;
     position: fixed;
     width: 0;
     top:0;
@@ -19,7 +19,8 @@
 }
 .menu-link{
     margin: 2rem 0.5rem;
-    color: white;
+    color: #ffffff;
+    white-space: nowrap;
     
 }
 .menu-link:hover{
@@ -52,6 +53,6 @@
 
 @media screen and (max-width: 480px) {
     .menu-link{
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }

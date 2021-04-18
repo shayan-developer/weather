@@ -8,8 +8,9 @@ const send =(email,msg)=>{
         From : email,
         Subject : "weather comment",
         Body : msg
-    }).then(
-      message => alert("پیام با موفقیت ارسال شد")
-    );
+    })
+    .then(message=> alert("پیام با موفقیت ارسال شد"))
+    .catch(error=>alert("خطا در ارسال پیام"))
+    
 }
 export default send
