@@ -1,12 +1,14 @@
 
 .header{
-height: 100vh;
+height: 80vh;
 }
 .allIcon{
     color: white;
     font-family: "BBaran",sans-serif;
     display: flex;
-    justify-content: center !important;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start !important;
     align-items: center;
     width: 100%;
 }
@@ -27,7 +29,7 @@ height: 100vh;
     position: relative;
     animation-name: cloud;
     animation-iteration-count: infinite;
-    animation-duration: 3s;
+    animation-duration: 4s;
     order: 1;
     }
 .cloud{
@@ -43,21 +45,29 @@ height: 100vh;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
+.head-text{
+    color: #ffffff;
+    font-family: "BBaran",sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    order: 2;
+    margin-top: 5rem;
+}
 @keyframes cloud {
     0%{
-        transform: translateX(10%) ;
+        transform: translateX(0%) ;
             }
     25%{
-                transform: translateX(15%) ;                
-            }
-    50%{
                 transform: translateX(10%) ;                
             }
+    50%{
+                transform: translateX(20%) ;                
+            }
     75%{
-                transform: translateX(15%) ;        
+                transform: translateX(10%) ;        
             }
     100%{
-                transform: translateX(10%) ;     
+                transform: translateX(0%) ;     
             }
 }    
 @keyframes sun{
@@ -105,16 +115,16 @@ transform: rotate(0deg);
 }
 @media screen and (max-width: 480px) {
     .sunny{
-        font-size: 6rem;
+        font-size: 8rem;
     }
     .cloud{
-        font-size: 7rem;
+        font-size: 9rem;
     }
     .lighting{
-        font-size: 5rem;
+        font-size: 7rem;
         left: 10%;
     }
-    .txt-icon{
-        font-size: 1.1rem;
+    .head-text{
+        font-size: 2rem;
     }
 }

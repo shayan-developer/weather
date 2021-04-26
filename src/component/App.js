@@ -10,13 +10,14 @@ export default class App extends Component {
             <>
                 <header>
                     <div className="row header">
-                        <div className="col-md-10 d-flex justify-content-center mx-auto">
-                            <div className="allIcon my-auto">
+                        <div className="col-md-10 d-flex justify-content-center  mx-auto">
+                            <div className="allIcon">
                                 <div className=" icon-contain ">
                                     <div className="cloud"><FaCloud /></div>
                                     <div className="lighting"><WiLightning  /></div>
                                     <div  className="sunny">< IoSunny className="sun"/></div>
                                 </div>
+                                <p className="head-text">هواشناسی آنلاین </p>
                             </div>
                         </div>
                     </div>
