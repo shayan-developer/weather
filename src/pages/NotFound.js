@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Styles/Notfound.css"
+import "../component/Styles/NotFound.css"
 import { BiSad } from "react-icons/bi";
 export default function NotFound() {
     return (

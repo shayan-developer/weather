@@ -1,6 +1,4 @@
-.mycontent{
-    background-image: linear-gradient(rgb(102, 224, 255),rgb(49, 157, 230));
-}
+
 .menu-item{
     flex-direction: column;
     display: flex;
@@ -8,7 +6,7 @@
     font-family: "BBaran",sans-serif;
     position: fixed;
     width: 0;
-    top:0;
+    top:40px;
     right: 0;
     height: 100vh;
     z-index: 1;
@@ -21,6 +19,8 @@
     margin: 2rem 0.5rem;
     color: #ffffff;
     white-space: nowrap;
+    font-size: 20px;
+    font-weight: 700;
     
 }
 .menu-link:hover{
@@ -29,6 +29,10 @@
 }
 .myicon{
     text-align: end;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
     background-color: rgb(66, 189, 226);
     padding: .5rem;
     font-family: "BBaran";
@@ -36,7 +40,7 @@
 }
 .icon-menu{
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #ffffff;
 }
 .close-icon{
